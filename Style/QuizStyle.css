@@ -1,7 +1,36 @@
 body{
 	color: #333;
 }
+
+.wrapper > h1{
+	text-align: center;
+}
+
+.wrapper{
+
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	width:20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.question{
+	text-align: center;
+}
+
+#quiz{
+	width:50%;
+	margin-right: auto;
+	margin-left: auto;
+}
 .answers {
+	width:50%;
+	margin-right: auto;
+	margin-left: auto;
     margin-bottom: 20px;
 }
 .nobull {
