@@ -1,3 +1,9 @@
+function writeUserData(quizList) {
+    firebase.database().ref('Quizz').set({
+        quiz: quizList
+    });
+}
+
 quizContainer = document.getElementById('quiz');
 resultsContainer = document.getElementById('results');
 saveButton = document.getElementById('save');
@@ -178,7 +184,7 @@ function saveQuiz() {
     //  This gives you a string in JSON syntax of the object above that you can 
     // send with XMLHttpRequest.
     var json = JSON.stringify(myQuestions);
-    
     localStorage.setItem('v', json);
+    writeUserData(json);
     console.log(json)
 }
